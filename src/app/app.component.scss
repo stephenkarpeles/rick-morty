@@ -17,7 +17,7 @@
     font-size: clamp(3rem, 5vw, 4rem);
     line-height: 1;
     margin: 0;
-    font-family: 'GothamProBold', Arial, Helvetica, sans-serif;
+    font-family: $fontBold;
   }
 }
 
@@ -50,8 +50,8 @@ main {
   }
 
   a {
-    font-size: 32px;
-    color: #ABAEB0;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    color: $lightGray;
     text-decoration: none;
   }
 

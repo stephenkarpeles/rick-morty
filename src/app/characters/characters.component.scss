@@ -1,23 +1,25 @@
+@import '../../styles.scss';
+
 .character-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   
   tr {
-    background: #2B343B;
+    background: $tableRowBgColor;
     transition: .2s ease all;
     cursor: pointer;
 
     &:hover {
       transition: .2s ease all;
-      background: #384047;
-      color: #7B68EE;
+      background: $lightBgColor;
+      color: $lightPurple;
     }
   }
 
   td {
     padding: 11px 16px;
-    border: solid 1px #384047;
+    border: solid 1px $lightBgColor;
     border-style: none none solid none;
 
     &:last-child {
@@ -47,5 +49,59 @@
 
   tr td:first-child {
     border-left-style: solid;
+  }
+}
+
+.search-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &__input,
+  &__submit {
+    height: 43px;
+  }
+
+  &__input {
+    width: calc(75% - 12px);    
+
+    input {
+      border: none;
+      padding: 0 17px;
+      width: 100%;
+      color: $formInputColor;
+      font-size: 16px;
+      font-family: $fontRegular;
+      height: 43px;
+      line-height: 43px;
+      background: white;
+      border-radius: $formInputRadius;
+    }
+  }
+
+  &__submit {
+    width: calc(25% - 12px);
+    min-width: 100px;
+
+    span {
+      display: inline-block;
+      background: $lightPurple;
+      color: white;
+      font-size: 18px;
+      border-radius: $formInputRadius;
+      padding: 0 24px;
+      width: 100%;
+      height: 43px;
+      line-height: 43px;
+      text-align: center;
+      cursor: pointer;
+      transition: .2s ease all;
+
+      &:hover {
+        background: lighten($lightPurple, 5%);
+        transition: .2s ease all;
+      }
+    }
   }
 }

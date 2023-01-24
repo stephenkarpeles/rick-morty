@@ -1,9 +1,12 @@
 
 <div class="search-block">
 
-    <input name="name-search" placeholder="Search By Name" type="text" autocomplete="off" [(ngModel)]="searchTerm" />
-
-    <span (click)="getCharacters(1)">Search</span>
+    <div class="search-block__input">
+        <input name="name-search" placeholder="Search By Name" type="text" autocomplete="off" [(ngModel)]="searchTerm" />
+    </div>
+    <div class="search-block__submit">
+        <span (click)="getCharacters(1)">Search</span>
+    </div>
 
 </div>
 
