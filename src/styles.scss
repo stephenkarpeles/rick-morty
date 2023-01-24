@@ -17,7 +17,7 @@ $lightGray: #ABAEB0;
 $formInputColor: #7C828D;
 $mainBgColor: #1E272E;
 $lightBgColor: #384047;
-$tableRowBgColor: #2B343B;
+$altBgColor: #2B343B;
 $formInputRadius: 6px;
 
 *,
@@ -42,4 +42,40 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+// Global Pagination Element
+.table-pagination {
+  margin-top: 31px;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    color: white;
+    margin: 0 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .1s ease all;
+    padding: 0 4px;
+
+    &:first-child {
+      padding: 0 4px 0 0;
+      margin: 0 8px 18px 0;
+    }
+
+    &:last-child {
+      padding: 0 0 0 4px;
+      margin: 0 0 18px 8px;
+    }
+
+    &:hover {
+      color: $lightPurple;
+      transition: .1s ease all;
+    }
+
+    &.active {
+      color: $lightPurple;
+      cursor: unset;
+    }
+  }
 }

@@ -23,5 +23,7 @@
 
 
 <ng-container *ngIf="pages">
-    <span *ngFor="let p of pages" [ngClass]="{'active': (p === currentPage)}" (click)="getCharacters(p)">{{p}}</span>
+    <div class="table-pagination">
+        <span *ngFor="let p of pages" [ngClass]="{'active': (p === currentPage)}" (click)="getCharacters(p)">{{p}}</span>
+    </div>
 </ng-container>

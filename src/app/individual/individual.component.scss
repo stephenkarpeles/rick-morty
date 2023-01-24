@@ -1,1 +1,49 @@
-div.individual div.card { margin: 0px auto; width: 300px; }
+@import '../../styles.scss';
+
+.individual {
+  .card {
+    width: 600px;
+    margin: 0 auto;
+    max-width: 100%;
+    background: $altBgColor;
+    border: $lightBgColor 1px solid;
+    border-radius: 10px;
+    padding: 36px 36px 60px;
+
+    img {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;      
+      object-fit: cover;
+      border-radius: 100px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      font-family: $fontBold;
+      line-height: 1.2;
+      padding: 54px 0 49px;
+      margin: 0;
+    }
+
+    &__attributes {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+
+      > div {
+        margin: 0 12px;
+
+        &:first-child {
+          margin: 0 12px 0 0;
+        }
+
+        &:last-child {
+          margin: 0 0 0 12px;
+        }
+      }
+    }
+  }
+}

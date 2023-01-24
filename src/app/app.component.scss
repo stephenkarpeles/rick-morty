@@ -51,6 +51,7 @@ main {
 
   a {
     font-size: clamp(1.5rem, 5vw, 2rem);
+    line-height: 1.2;
     color: $lightGray;
     text-decoration: none;
   }
