@@ -1,6 +1,11 @@
-## Development server
+## Local setup
 
-After installing npm packages (`npm install`), you can run `ng serve` to start a development server. Navigate to `http://localhost:4200/` and you will see the application. The app will reload automatically when you change any of the source files.
+1. Git clone this repo
+2. Install npm packages (`npm install`)
+3. To spin up the server, run `ng serve` 
+4. Navigate to `http://localhost:4200/` and you will see the application 
+
+Note: The app will reload automatically when you change any of the source files.
 
 ## Further help
 
