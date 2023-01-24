@@ -1,7 +1,7 @@
 ## Local setup
 
 1. Git clone this repo
-2. Install npm packages (`npm install`)
+2. Run `npm install` from the root of the project
 3. To spin up the server, run `ng serve` 
 4. Navigate to `http://localhost:4200/` and you will see the application 
 
