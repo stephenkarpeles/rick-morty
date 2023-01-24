@@ -1,14 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'GothamPro';
-  src: url('./assets/GothamProRegular.ttf');
+  src: url('./assets/fonts/GothamProRegular.ttf');
 }
 
 @font-face {
   font-family: 'GothamProBold';
-  src: url('./assets/GothamProBold.ttf');
+  src: url('./assets/fonts/GothamProBold.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 body {
+  background: white;
   font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
