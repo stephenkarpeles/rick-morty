@@ -9,6 +9,10 @@
   src: url('./assets/fonts/GothamProBold.ttf');
 }
 
+// Variables
+$fontRegular: 'GothamPro', Arial, Helvetica, sans-serif;
+$fontBold: 'GothamProBold', Arial, Helvetica, sans-serif;
+
 *,
 *::before,
 *::after {
@@ -19,7 +23,7 @@
 
 body {
   background: #1E272E;
-  font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+  font-family: $fontRegular;
 }
 
 html,

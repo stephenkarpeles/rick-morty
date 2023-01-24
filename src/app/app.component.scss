@@ -1,3 +1,5 @@
+@import '../styles.scss';
+
 .header {
   background-image: url('../assets/images/hero-image.svg');
   background-size: 250px 250px;
@@ -28,4 +30,35 @@ main {
   width: 92%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.internal-nav-tabs {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 78px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0 20px;
+  }
+
+  a {
+    font-size: 32px;
+    color: #ABAEB0;
+    text-decoration: none;
+  }
+
+  .nav-link {
+    &.active {
+      font-family: $fontBold;
+      color: white;
+    }
+  }
 }

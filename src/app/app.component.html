@@ -6,12 +6,15 @@
 
   <div class="container">
 
-    <a routerLink="/characters" [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }" class="nav-link">Characters</a>
-
-    <a routerLink="/episodes" class="nav-link">Episode Guide</a>
+    <nav class="internal-nav-tabs">
+      <ul>
+        <li><a routerLink="/characters" routerLinkActive="active" [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }" class="nav-link">Characters</a></li>
+        <li><a routerLink="/episodes" routerLinkActive="active" class="nav-link">Episode Guide</a></li>
+      </ul>   
+    </nav>
 
     <router-outlet></router-outlet>
-    
+
   </div>
 
 </main>
