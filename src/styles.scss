@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./assets/GothamProRegular.ttf');
+}
+
+@font-face {
+  font-family: 'GothamProBold';
+  src: url('./assets/GothamProBold.ttf');
+}
+
+body {
+  font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+}
